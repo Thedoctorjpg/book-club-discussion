@@ -1,8 +1,11 @@
+import { renderReadingSection, bindReaderEvents, openDeviceSettings } from './reader.js';
+
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 const state = {
   books: [],
   curatedLists: [],
+  readingSources: null,
   discussions: { clubs: [], meetings: [], threads: [] },
   activeLetter: 'A',
   searchQuery: '',
@@ -16,15 +19,17 @@ const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 async function loadData() {
-  const [booksRes, curatedRes, discussRes] = await Promise.all([
+  const [booksRes, curatedRes, sourcesRes, discussRes] = await Promise.all([
     fetch('/data/books.json'),
     fetch('/data/curated-lists.json'),
+    fetch('/data/reading-sources.json'),
     fetch('/api/discussions'),
   ]);
   const booksData = await booksRes.json();
   state.books = booksData.books;
   const curatedData = await curatedRes.json();
   state.curatedLists = curatedData.lists;
+  state.readingSources = await sourcesRes.json();
   state.discussions = await discussRes.json();
 }
 
@@ -183,6 +188,11 @@ function openBookDetail(bookId) {
   $('#detail-prompts').querySelectorAll('.prompt-btn').forEach((btn) => {
     btn.addEventListener('click', () => startThreadFromPrompt(bookId, btn.dataset.category, btn.dataset.prompt));
   });
+
+  const readingEl = $('#detail-reading');
+  if (readingEl && state.readingSources) {
+    renderReadingSection(book, state.readingSources, readingEl);
+  }
 
   $('#book-detail').hidden = false;
   document.body.style.overflow = 'hidden';
@@ -577,8 +587,14 @@ function bindEvents() {
 
   $('#member-name').addEventListener('blur', saveMemberName);
 
+  $('#btn-reader-settings')?.addEventListener('click', () => {
+    openDeviceSettings(state.readingSources);
+  });
+
+  bindReaderEvents();
+
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !$('#book-detail').hidden) closeBookDetail();
+    if (e.key === 'Escape' && !$('#book-detail').hidden && $('#reader-overlay')?.hidden) closeBookDetail();
   });
 }
 

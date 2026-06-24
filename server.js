@@ -13,6 +13,13 @@ const MIME = {
   '.json': 'application/json',
 };
 
+const ALLOWED_EPUB_HOSTS = new Set([
+  'www.gutenberg.org',
+  'gutenberg.org',
+  'standardebooks.org',
+  'archive.org',
+]);
+
 function readDiscussions() {
   try {
     return JSON.parse(fs.readFileSync(DISCUSSIONS_PATH, 'utf8'));
@@ -137,6 +144,33 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 201, meeting);
     } catch {
       return sendJson(res, 400, { error: 'Invalid request body' });
+    }
+  }
+
+  if (urlPath === '/api/epub-proxy' && req.method === 'GET') {
+    try {
+      const target = new URL(req.url, 'http://localhost').searchParams.get('url');
+      if (!target) return sendJson(res, 400, { error: 'Missing url parameter' });
+
+      const parsed = new URL(target);
+      if (!ALLOWED_EPUB_HOSTS.has(parsed.hostname)) {
+        return sendJson(res, 403, { error: 'Host not allowed' });
+      }
+
+      const upstream = await fetch(target);
+      if (!upstream.ok) {
+        return sendJson(res, upstream.status, { error: 'Upstream fetch failed' });
+      }
+
+      const buffer = Buffer.from(await upstream.arrayBuffer());
+      res.writeHead(200, {
+        'Content-Type': 'application/epub+zip',
+        'Content-Length': buffer.length,
+        'Cache-Control': 'public, max-age=86400',
+      });
+      return res.end(buffer);
+    } catch {
+      return sendJson(res, 500, { error: 'EPUB proxy error' });
     }
   }
 

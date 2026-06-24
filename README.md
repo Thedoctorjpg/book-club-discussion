@@ -16,6 +16,8 @@ Inspired by [SuperSummary](https://www.supersummary.com/all-study-guides/A/) stu
 - **Discussion threads** — Start threads from prompts and reply in-thread
 - **Book club tools** — Club profile, member list, and meeting scheduler
 - **Persistent storage** — Discussions and meetings saved to `data/discussions.json`
+- **EPUB reader** — Read public-domain titles in-browser (Project Gutenberg via epub.js)
+- **E-reader connections** — Quick links to Kindle, Kobo, Apple Books, Google Play, Libby, and Open Library; upload local EPUBs; save Send-to-Kindle email
 
 No database required. Runs on Node.js with static files and a small REST API.
 
@@ -62,6 +64,32 @@ Enter your name in the header before posting — it is stored in `localStorage`.
 | **Discuss** | Thread list, replies, filter by book |
 | **My Club** | Club info, members, upcoming meetings |
 
+Click the **📚** header button to configure Kindle/Kobo emails and preferred device.
+
+---
+
+## EPUB & e-readers
+
+Each book detail panel includes a **Read** section:
+
+| Option | Description |
+|--------|-------------|
+| **Read in browser** | Free EPUB from Project Gutenberg (public-domain titles) |
+| **Kindle / Kobo / Apple / Google Play** | Store search links for eBook editions |
+| **Libby** | Borrow from your local library |
+| **Open Library / Archive** | Free borrow or scanned copies |
+| **Open local EPUB** | Upload any `.epub` from your device |
+
+Reading position is saved in `localStorage` per book. Use arrow keys (← →) in the reader.
+
+### Send to Kindle
+
+1. Open **E-reader settings** (📚 in header or book detail).
+2. Add your `@kindle.com` address from [amazon.com/sendtokindle](https://www.amazon.com/sendtokindle/email).
+3. Download EPUB from Gutenberg and email it as an attachment, or use Amazon's Send to Kindle app.
+
+Gutenberg EPUBs are proxied through `/api/epub-proxy` to avoid browser CORS limits.
+
 ---
 
 ## Curated list: Art History & Classics
@@ -98,6 +126,7 @@ book-club-discussion/
 └── data/
     ├── books.json          # Catalog + discussion prompts
     ├── curated-lists.json  # Themed reading paths
+    ├── reading-sources.json # Gutenberg IDs + e-reader defaults
     └── discussions.json    # Clubs, meetings, threads (runtime data)
 ```
 
@@ -112,6 +141,7 @@ book-club-discussion/
 | `POST` | `/api/threads/:id/replies` | Add a reply to a thread |
 | `POST` | `/api/meetings` | Schedule a club meeting |
 | `POST` | `/api/clubs` | Create a book club |
+| `GET` | `/api/epub-proxy?url=` | Proxy EPUB from Gutenberg (CORS bypass) |
 
 ### Example: create a thread
 

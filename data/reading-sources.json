@@ -1,0 +1,32 @@
+{
+  "defaults": {
+    "kindleSetupUrl": "https://www.amazon.com/sendtokindle/email",
+    "koboUrl": "https://www.kobo.com/p/en/apps",
+    "libbyUrl": "https://www.overdrive.com/apps/libby/"
+  },
+  "books": {
+    "iliad": { "gutenbergId": 6130 },
+    "odyssey": { "gutenbergId": 1727 },
+    "aeneid": { "gutenbergId": 228 },
+    "agamemnon": { "gutenbergId": 27458 },
+    "ajax": { "gutenbergId": 31 },
+    "oedipus-rex": { "gutenbergId": 31 },
+    "lysistrata": { "gutenbergId": 7998 },
+    "symposium": { "gutenbergId": 1600 },
+    "republic": { "gutenbergId": 1497 },
+    "meditations": { "gutenbergId": 2680 },
+    "metamorphoses": { "gutenbergId": 26095 },
+    "histories-herodotus": { "gutenbergId": 2707 },
+    "peloponnesian-war": { "gutenbergId": 7142 },
+    "agricola": { "gutenbergId": 30127 },
+    "lives-of-artists": { "gutenbergId": 25326 },
+    "frankenstein": { "gutenbergId": 84 },
+    "jane-eyre": { "gutenbergId": 1260 },
+    "wuthering-heights": { "gutenbergId": 768 },
+    "pride-prejudice": { "gutenbergId": 1342 },
+    "gatsby": { "gutenbergId": 64320 },
+    "yellow-wallpaper": { "gutenbergId": 1952 },
+    "ulysses": { "gutenbergId": 4300 },
+    "zoo-story": { "gutenbergId": 42061 }
+  }
+}

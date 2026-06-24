@@ -28,6 +28,7 @@
           <button class="view-tab" role="tab" id="tab-discuss" aria-selected="false" aria-controls="view-discuss">Discuss</button>
           <button class="view-tab" role="tab" id="tab-club" aria-selected="false" aria-controls="view-club">My Club</button>
         </div>
+        <button type="button" class="nav-reader-btn" id="btn-reader-settings" title="E-reader settings">📚</button>
         <div class="member-chip">
           <label for="member-name" class="sr-only">Your name</label>
           <input type="text" id="member-name" class="member-input" placeholder="Your name" maxlength="40">
@@ -98,6 +99,11 @@
           <section class="detail-section">
             <h3>Synopsis</h3>
             <p id="detail-synopsis"></p>
+          </section>
+          <section class="detail-section">
+            <h3>Read</h3>
+            <p class="detail-hint">In-browser EPUB, Kindle, Kobo, Apple Books, Libby, or upload your own file.</p>
+            <div id="detail-reading"></div>
           </section>
           <section class="detail-section">
             <h3>Discussion Prompts</h3>
@@ -221,6 +227,55 @@
       <div class="modal-actions">
         <button type="button" class="btn btn-ghost" id="meeting-cancel">Cancel</button>
         <button type="submit" class="btn btn-primary">Schedule</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- EPUB reader -->
+  <aside id="reader-overlay" class="reader-overlay" hidden aria-label="EPUB reader">
+    <div class="reader-toolbar">
+      <div class="reader-toolbar-left">
+        <button type="button" class="reader-tool-btn" id="reader-close" aria-label="Close reader">×</button>
+        <h2 id="reader-title" class="reader-title">Reading</h2>
+        <span id="reader-status" class="reader-status"></span>
+      </div>
+      <div class="reader-toolbar-right">
+        <button type="button" class="reader-tool-btn" id="reader-font-down" aria-label="Smaller text">A−</button>
+        <button type="button" class="reader-tool-btn" id="reader-font-up" aria-label="Larger text">A+</button>
+        <button type="button" class="reader-tool-btn" id="reader-prev" aria-label="Previous page">‹</button>
+        <button type="button" class="reader-tool-btn" id="reader-next" aria-label="Next page">›</button>
+      </div>
+    </div>
+    <div id="reader-viewer" class="reader-viewer"></div>
+  </aside>
+
+  <!-- E-reader device settings -->
+  <dialog id="device-modal" class="modal modal-wide">
+    <form id="device-form" method="dialog">
+      <h3>E-reader connections</h3>
+      <p class="modal-lead">Link your devices to get tailored hints when reading club picks.</p>
+      <div class="form-group">
+        <label for="kindle-email">Send-to-Kindle email</label>
+        <input type="email" id="kindle-email" placeholder="you@kindle.com">
+      </div>
+      <div class="form-group">
+        <label for="kobo-email">Kobo account email (optional)</label>
+        <input type="email" id="kobo-email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="preferred-device">Preferred reader</label>
+        <select id="preferred-device">
+          <option value="browser">In-browser EPUB</option>
+          <option value="kindle">Amazon Kindle</option>
+          <option value="kobo">Kobo</option>
+          <option value="apple">Apple Books</option>
+          <option value="libby">Libby (library)</option>
+        </select>
+      </div>
+      <div id="device-help" class="device-help"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="device-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
       </div>
     </form>
   </dialog>
