@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter &amp; Verse — Book Club Discussions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-texture" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logo-home">
+        <span class="logo-mark" aria-hidden="true">📖</span>
+        <span class="logo-text">
+          <strong>Chapter &amp; Verse</strong>
+          <span>Book Club Discussions</span>
+        </span>
+      </a>
+      <nav class="header-nav">
+        <div class="view-tabs" role="tablist" aria-label="Main views">
+          <button class="view-tab active" role="tab" id="tab-library" aria-selected="true" aria-controls="view-library">Library</button>
+          <button class="view-tab" role="tab" id="tab-curated" aria-selected="false" aria-controls="view-curated">Curated</button>
+          <button class="view-tab" role="tab" id="tab-discuss" aria-selected="false" aria-controls="view-discuss">Discuss</button>
+          <button class="view-tab" role="tab" id="tab-club" aria-selected="false" aria-controls="view-club">My Club</button>
+        </div>
+        <div class="member-chip">
+          <label for="member-name" class="sr-only">Your name</label>
+          <input type="text" id="member-name" class="member-input" placeholder="Your name" maxlength="40">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Library view -->
+    <section id="view-library" class="view active" role="tabpanel" aria-labelledby="tab-library">
+      <div class="hero">
+        <p class="hero-eyebrow">Inspired by literary study guides</p>
+        <h1>Explore titles. Spark conversations.</h1>
+        <p class="hero-sub">Browse our curated library of classic and contemporary works — each with scholar-style prompts on themes, characters, symbols, and quotes to fuel your next book club meeting.</p>
+        <div class="hero-stats" id="hero-stats">
+          <div class="hero-stat"><span id="stat-total">0</span> titles</div>
+          <div class="hero-stat"><span id="stat-fiction">0</span> fiction</div>
+          <div class="hero-stat"><span id="stat-nonfiction">0</span> nonfiction</div>
+        </div>
+      </div>
+
+      <div class="browse-toolbar">
+        <div class="search-bar-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" id="search-input" class="search-input" placeholder="Search by title or author..." autocomplete="off" aria-label="Search books">
+          <button class="search-clear" id="search-clear" hidden aria-label="Clear search">×</button>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="filter-genre">Genre</label>
+            <select id="filter-genre">
+              <option value="">All genres</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Nonfiction">Nonfiction</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-audience">Audience</label>
+            <select id="filter-audience">
+              <option value="">All audiences</option>
+              <option value="Adult">Adult</option>
+              <option value="YA">Young Adult</option>
+              <option value="Middle Grade">Middle Grade</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <nav class="alpha-nav" id="alpha-nav" aria-label="Browse by letter"></nav>
+
+      <div class="book-grid" id="book-grid"></div>
+      <p class="empty-state" id="library-empty" hidden>No books match your search. Try a different letter or filter.</p>
+    </section>
+
+    <!-- Curated reading lists -->
+    <section id="view-curated" class="view" role="tabpanel" aria-labelledby="tab-curated" hidden>
+      <div id="curated-content"></div>
+    </section>
+
+    <!-- Book detail (overlay panel) -->
+    <aside id="book-detail" class="detail-panel" hidden aria-label="Book details">
+      <div class="detail-backdrop" id="detail-backdrop"></div>
+      <div class="detail-card">
+        <button class="detail-close" id="detail-close" aria-label="Close book details">×</button>
+        <div class="detail-header" id="detail-header"></div>
+        <div class="detail-body">
+          <section class="detail-section">
+            <h3>Synopsis</h3>
+            <p id="detail-synopsis"></p>
+          </section>
+          <section class="detail-section">
+            <h3>Discussion Prompts</h3>
+            <p class="detail-hint">Click a prompt to start a thread in your club.</p>
+            <div id="detail-prompts"></div>
+          </section>
+        </div>
+        <div class="detail-footer">
+          <button class="btn btn-primary" id="btn-schedule-meeting">Schedule club meeting</button>
+          <button class="btn btn-secondary" id="btn-view-threads">View discussions</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Discuss view -->
+    <section id="view-discuss" class="view" role="tabpanel" aria-labelledby="tab-discuss" hidden>
+      <div class="section-header">
+        <h2>Discussion Threads</h2>
+        <p>Conversations sparked by study-guide prompts across your club's reading list.</p>
+      </div>
+      <div class="discuss-filters">
+        <div class="filter-group">
+          <label for="thread-book-filter">Book</label>
+          <select id="thread-book-filter">
+            <option value="">All books</option>
+          </select>
+        </div>
+        <button class="btn btn-secondary" id="btn-new-thread">Start new thread</button>
+      </div>
+      <div class="thread-list" id="thread-list"></div>
+      <p class="empty-state" id="discuss-empty" hidden>No discussions yet. Pick a book from the library and click a prompt to begin.</p>
+    </section>
+
+    <!-- Club view -->
+    <section id="view-club" class="view" role="tabpanel" aria-labelledby="tab-club" hidden>
+      <div class="club-layout">
+        <div class="club-main">
+          <div class="section-header">
+            <h2 id="club-name">My Book Club</h2>
+            <p id="club-description"></p>
+          </div>
+          <div class="members-row" id="members-row"></div>
+
+          <div class="section-header">
+            <h3>Upcoming Meetings</h3>
+          </div>
+          <div class="meeting-list" id="meeting-list"></div>
+          <p class="empty-state" id="meetings-empty" hidden>No meetings scheduled. Open a book and schedule one.</p>
+        </div>
+        <aside class="club-sidebar">
+          <div class="sidebar-card">
+            <h3>Prompt Categories</h3>
+            <ul class="category-list">
+              <li><span class="cat-dot themes"></span> Themes — big ideas &amp; moral questions</li>
+              <li><span class="cat-dot characters"></span> Characters — motives &amp; arcs</li>
+              <li><span class="cat-dot symbols"></span> Symbols — motifs &amp; imagery</li>
+              <li><span class="cat-dot quotes"></span> Quotes — close reading moments</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Meeting Tips</h3>
+            <ol class="tips-list">
+              <li>Start with one prompt — let the conversation branch.</li>
+              <li>Ask "what passage made you feel that?"</li>
+              <li>Leave 10 minutes for favorite lines.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- New thread modal -->
+  <dialog id="thread-modal" class="modal">
+    <form id="thread-form" method="dialog">
+      <h3>Start a Discussion</h3>
+      <div class="form-group">
+        <label for="thread-book">Book</label>
+        <select id="thread-book" required></select>
+      </div>
+      <div class="form-group">
+        <label for="thread-category">Category</label>
+        <select id="thread-category">
+          <option value="themes">Themes</option>
+          <option value="characters">Characters</option>
+          <option value="symbols">Symbols</option>
+          <option value="quotes">Quotes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="thread-prompt">Discussion prompt</label>
+        <textarea id="thread-prompt" rows="3" required placeholder="What would you like the group to discuss?"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="thread-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Post thread</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Meeting modal -->
+  <dialog id="meeting-modal" class="modal">
+    <form id="meeting-form" method="dialog">
+      <h3>Schedule a Meeting</h3>
+      <div class="form-group">
+        <label for="meeting-book">Book</label>
+        <select id="meeting-book" required></select>
+      </div>
+      <div class="form-group">
+        <label for="meeting-date">Date &amp; time</label>
+        <input type="datetime-local" id="meeting-date" required>
+      </div>
+      <div class="form-group">
+        <label for="meeting-location">Location</label>
+        <input type="text" id="meeting-location" placeholder="Library, café, or video link">
+      </div>
+      <div class="form-group">
+        <label for="meeting-notes">Notes</label>
+        <textarea id="meeting-notes" rows="2" placeholder="Reading goals, snack assignments, etc."></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="meeting-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Schedule</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <p>Study-guide-style prompts for thoughtful book club conversation. Browse titles alphabetically — from <em>About a Boy</em> to <em>The Zoo Story</em>.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1019 @@
+{
+  "books": [
+    {
+      "id": "about-a-boy",
+      "title": "About a Boy",
+      "author": "Nick Hornby",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1998,
+      "letter": "A",
+      "synopsis": "Will Freeman lives off his father's royalties and invents a child to join a single-parents group, where he meets Marcus — an awkward twelve-year-old whose mother is spiraling into depression.",
+      "prompts": {
+        "themes": ["What does the novel say about masculinity and emotional vulnerability?", "How does loneliness drive both Will and Marcus to change?", "Is authenticity possible when relationships begin with deception?"],
+        "characters": ["How does Marcus function as both comic relief and moral center?", "What makes Will's transformation believable — or not?", "How does Fiona's depression shape the story without defining her entirely?"],
+        "symbols": ["What role does music (especially 'Killing Me Softly') play in the narrative?", "How do the 'islands' metaphor — people who don't need anyone — evolve?"],
+        "quotes": ["Discuss: 'No man is an island.' How does Hornby test this idea?", "Which moment of dialogue best captures the odd chemistry between Will and Marcus?"]
+      }
+    },
+    {
+      "id": "about-grace",
+      "title": "About Grace",
+      "author": "Anthony Doerr",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 2004,
+      "letter": "A",
+      "synopsis": "David Winkler, a hydrologist haunted by prophetic dreams, abandons his family to protect them from a disaster he foresees — then spends decades trying to find his way back.",
+      "prompts": {
+        "themes": ["Can running away ever be an act of love?", "How does Doerr weave science and mysticism together?", "What does the novel suggest about second chances?"],
+        "characters": ["Is David sympathetic despite his abandonment?", "How does Grace's perspective change our reading of David's choices?"],
+        "symbols": ["What do water and weather patterns symbolize throughout?", "How does the snowflake motif connect to identity?"],
+        "quotes": ["Find a passage about prediction — how does foreknowledge become a curse?"]
+      }
+    },
+    {
+      "id": "absalom-absalom",
+      "title": "Absalom, Absalom!",
+      "author": "William Faulkner",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1936,
+      "letter": "A",
+      "synopsis": "Through nested narrators, the rise and ruin of Thomas Sutpen's dynasty in Mississippi unfolds — a Gothic epic of ambition, race, and the unreliability of memory.",
+      "prompts": {
+        "themes": ["How does Faulkner explore the South's haunted past?", "What is the cost of the 'design' Sutpen pursues?", "Can history ever be told objectively in this novel?"],
+        "characters": ["Compare Quentin and Shreve as listeners — why does the story need an audience?", "What makes Sutpen both mythic and monstrous?"],
+        "symbols": ["What does the mansion Sutpen builds represent?", "How does the name 'Absalom' invoke biblical tragedy?"],
+        "quotes": ["Choose a passage of breathless Faulkner prose — what does the style force readers to experience?"]
+      }
+    },
+    {
+      "id": "alias-grace",
+      "title": "Alias Grace",
+      "author": "Margaret Atwood",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1996,
+      "letter": "A",
+      "synopsis": "Grace Marks, convicted of double murder in 1843 Canada, tells her story to a psychiatrist — but whose truth are we hearing?",
+      "prompts": {
+        "themes": ["How does Atwood examine gender, class, and credibility?", "Is Grace a victim, a performer, or both?", "What does quilting symbolize as a narrative act?"],
+        "characters": ["How trustworthy is Dr. Simon Jordan?", "What do the servants and employers reveal about Victorian power?"],
+        "symbols": ["Analyze the quilt patterns Grace sews — what stories do they tell?", "What role do dreams and hypnosis play?"],
+        "quotes": ["Discuss a moment where Grace withholds or reshapes the truth."]
+      }
+    },
+    {
+      "id": "all-about-love",
+      "title": "All About Love",
+      "author": "bell hooks",
+      "genre": "Nonfiction",
+      "type": "Book",
+      "audience": "Adult",
+      "year": 2000,
+      "letter": "A",
+      "synopsis": "bell hooks argues that love is a transformative practice — not just a feeling — and examines how culture fails to teach us how to love.",
+      "prompts": {
+        "themes": ["How does hooks redefine love as action rather than emotion?", "What is the connection between love and justice?", "How does childhood wounding shape adult relationships?"],
+        "characters": ["hooks writes personally — how does her voice build trust with readers?", "Which cultural figures does she invoke effectively?"],
+        "symbols": ["What does hooks mean by 'love as a verb'?", "How is the 'loveless culture' depicted?"],
+        "quotes": ["Pick a definition of love from the text — do you agree?", "Which passage challenged your assumptions most?"]
+      }
+    },
+    {
+      "id": "after-dark",
+      "title": "After Dark",
+      "author": "Haruki Murakami",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 2004,
+      "letter": "A",
+      "synopsis": "Over a single Tokyo night, a sister reads in a Denny's while her sleeping sibling's spirit wanders — and strangers' lives intersect in the city's after-hours glow.",
+      "prompts": {
+        "themes": ["What does Murakami suggest about the hidden life of cities at night?", "How do dreams and waking reality blur?", "What is the novel's stance on loneliness?"],
+        "characters": ["Why is Mari our anchor in such a strange narrative?", "How does the TV as a window function narratively?"],
+        "symbols": ["What does the unplugged phone represent?", "How does darkness operate as both setting and mood?"],
+        "quotes": ["Discuss the novel's use of real time — how does the clock affect tension?"]
+      }
+    },
+    {
+      "id": "beloved",
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1987,
+      "letter": "B",
+      "synopsis": "Sethe, a formerly enslaved woman, is haunted by the ghost of her dead child — until a mysterious young woman named Beloved arrives.",
+      "prompts": {
+        "themes": ["How does Morrison make the unspeakable speakable?", "What is the price of memory versus forgetting?", "How does motherhood function under slavery's legacy?"],
+        "characters": ["Who is Beloved — ghost, guilt, history, or all three?", "How does Paul D's presence challenge Sethe's isolation?"],
+        "symbols": ["What does 124 Bluestone Road represent?", "Analyze the tree on Sethe's back."],
+        "quotes": ["Discuss: 'Freeing yourself was one thing; claiming ownership of that freed self was another.'"]
+      }
+    },
+    {
+      "id": "brave-new-world",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1932,
+      "letter": "B",
+      "synopsis": "In a genetically engineered future of conditioned happiness, John the Savage challenges a world that traded suffering for stability.",
+      "prompts": {
+        "themes": ["Is stability worth the cost of freedom?", "How does consumerism replace religion?", "Does the novel predict our present more than Orwell's 1984?"],
+        "characters": ["Why is John the most tragic figure?", "What does Mustapha Mond believe he's protecting?"],
+        "symbols": ["What does soma represent in our culture today?", "How does Shakespeare function as a symbol of the old world?"],
+        "quotes": ["'Wasn't it better to be unhappy but free?' — where do you stand?"]
+      }
+    },
+    {
+      "id": "circe",
+      "title": "Circe",
+      "author": "Madeline Miller",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 2018,
+      "letter": "C",
+      "synopsis": "Banished to a deserted island, the witch Circe discovers her power — and reclaims her story from the men who mythologized her.",
+      "prompts": {
+        "themes": ["How is exile transformed into freedom?", "What does the novel say about immortality versus mortality?", "How does Miller feminist-retell myth?"],
+        "characters": ["How does Circe change from timid nymph to sovereign?", "Which mythic guest (Odysseus, Medea, Penelope) reveals most about her?"],
+        "symbols": ["What does witchcraft represent as craft and agency?", "How does Aiaia function as a character?"],
+        "quotes": ["Discuss Circe's definition of power versus Zeus's."]
+      }
+    },
+    {
+      "id": "dune",
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1965,
+      "letter": "D",
+      "synopsis": "Paul Atreides arrives on desert planet Arrakis, where spice, prophecy, and ecological politics collide in an epic of empire.",
+      "prompts": {
+        "themes": ["Is Paul a hero or a warning about messianic leadership?", "How does ecology function as politics?", "What does the novel say about colonial extraction?"],
+        "characters": ["How do the Bene Gesserit shape history from the shadows?", "What makes Lady Jessica compelling?"],
+        "symbols": ["What does the sandworm represent?", "Analyze water as the ultimate wealth."],
+        "quotes": ["'Fear is the mind-killer' — how does the litany against fear work in the story?"]
+      }
+    },
+    {
+      "id": "educated",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "genre": "Nonfiction",
+      "type": "Memoir",
+      "audience": "Adult",
+      "year": 2018,
+      "letter": "E",
+      "synopsis": "Raised in a survivalist Idaho family that distrusted formal schooling, Westover educates herself to Cambridge — and must reckon with the family she leaves behind.",
+      "prompts": {
+        "themes": ["What is the relationship between education and self-invention?", "How does Westover write about family loyalty without villainizing?", "Can you ever fully leave your upbringing?"],
+        "characters": ["How does Shawn function as both loving brother and abuser?", "What role does Tyler play as a bridge?"],
+        "symbols": ["What does the junkyard symbolize?", "How does the mountain function as home and prison?"],
+        "quotes": ["Discuss a moment where Westover's memory is uncertain — why include it?"]
+      }
+    },
+    {
+      "id": "frankenstein",
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1818,
+      "letter": "F",
+      "synopsis": "Victor Frankenstein creates life from dead matter, then abandons his Creature — setting off a tragedy of rejection, revenge, and responsibility.",
+      "prompts": {
+        "themes": ["Who is the real monster?", "What are the limits of scientific ambition?", "How does the novel explore loneliness?"],
+        "characters": ["Does Victor deserve sympathy?", "How does the Creature's eloquence change our moral judgment?"],
+        "symbols": ["What does fire symbolize for the Creature?", "How does the Arctic frame function?"],
+        "quotes": ["'Beware; for I am fearless, and therefore powerful.' — discuss power born from suffering."]
+      }
+    },
+    {
+      "id": "gatsby",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1925,
+      "letter": "G",
+      "synopsis": "Nick Carraway watches his mysterious neighbor Jay Gatsby pursue wealth and Daisy Buchanan across one glittering, doomed Long Island summer.",
+      "prompts": {
+        "themes": ["Is the American Dream aspirational or destructive here?", "How does class shape every relationship?", "What is the role of nostalgia?"],
+        "characters": ["Why is Nick the narrator — is he reliable?", "What makes Gatsby both magnificent and hollow?"],
+        "symbols": ["Analyze the green light.", "What do the eyes of Dr. T.J. Eckleburg represent?"],
+        "quotes": ["'So we beat on, boats against the current...' — what current?"]
+      }
+    },
+    {
+      "id": "handmaids-tale",
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1985,
+      "letter": "H",
+      "synopsis": "In the Republic of Gilead, Offred serves as a reproductive slave — her inner life the last private rebellion against a theocratic state.",
+      "prompts": {
+        "themes": ["How does Gilead weaponize language?", "What forms of resistance exist when open rebellion is death?", "How relevant is this novel today?"],
+        "characters": ["What do we learn from Offred's memories of Luke and Moira?", "How does Serena Joy embody complicity?"],
+        "symbols": ["What do the red habits signify?", "Analyze the Wall."],
+        "quotes": ["'Nolite te bastardes carborundorum' — what does this Latin joke mean for hope?"]
+      }
+    },
+    {
+      "id": "invisible-man",
+      "title": "Invisible Man",
+      "author": "Ralph Ellison",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1952,
+      "letter": "I",
+      "synopsis": "A young Black man moves from the Jim Crow South to Harlem, discovering that society renders him invisible while demanding he perform visibility.",
+      "prompts": {
+        "themes": ["What kinds of invisibility does Ellison explore?", "How does the Brotherhood replicate oppression?", "Is the ending hopeful or resigned?"],
+        "characters": ["How does the protagonist remain unnamed — and why?", "What does Brother Jack's glass eye symbolize about ideology?"],
+        "symbols": ["Analyze the briefcase and its contents.", "What does the basement 'hole' represent?"],
+        "quotes": ["'I am invisible, understand, simply because people refuse to see me.' — personal resonance?"]
+      }
+    },
+    {
+      "id": "jane-eyre",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1847,
+      "letter": "J",
+      "synopsis": "Orphan Jane Eyre becomes governess at Thornfield Hall, where she falls for the brooding Rochester — and uncovers a devastating secret.",
+      "prompts": {
+        "themes": ["How does Jane insist on moral equality in love?", "What is the Gothic doing in a bildungsroman?", "Does Jane sacrifice or assert autonomy at the end?"],
+        "characters": ["Is Rochester redeemable?", "How does Bertha Mason function in the story — and what are we to make of her portrayal?"],
+        "symbols": ["Fire and ice imagery — track it through the novel.", "What does the red room represent?"],
+        "quotes": ["'I am no bird; and no net ensnares me.' — discuss independence."]
+      }
+    },
+    {
+      "id": "kite-runner",
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 2003,
+      "letter": "K",
+      "synopsis": "Amir grows up in Kabul with his servant's son Hassan, betrays him, and years later seeks redemption in Taliban-era Afghanistan.",
+      "prompts": {
+        "themes": ["Can guilt be redeemed through action?", "How does the novel portray class and ethnic hierarchy?", "What is the cost of silence?"],
+        "characters": ["Is Amir's cowardice relatable or unforgivable?", "How does Hassan's loyalty define the moral center?"],
+        "symbols": ["What do kites represent at different stages?", "How does the cleft lip motif work?"],
+        "quotes": ["'For you, a thousand times over' — when does this line land differently?"]
+      }
+    },
+    {
+      "id": "lottery",
+      "title": "The Lottery",
+      "author": "Shirley Jackson",
+      "genre": "Fiction",
+      "type": "Short Story",
+      "audience": "Adult",
+      "year": 1948,
+      "letter": "L",
+      "synopsis": "A small American village gathers for an annual lottery with a horrifying tradition that no one questions — until someone does.",
+      "prompts": {
+        "themes": ["How does tradition justify cruelty?", "What does the story say about scapegoating?", "Why is the horror in the mundane details?"],
+        "characters": ["How does Tessie Hutchinson's protest change the ending?", "What do the children foreshadow?"],
+        "symbols": ["Analyze the black box.", "What does the stones imagery accomplish?"],
+        "quotes": ["'Lottery in June, corn be heavy soon' — discuss ritual and agriculture."]
+      }
+    },
+    {
+      "id": "mockingbird",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1960,
+      "letter": "M",
+      "synopsis": "Scout Finch grows up in Depression-era Alabama as her father Atticus defends a Black man falsely accused of rape.",
+      "prompts": {
+        "themes": ["How does innocence confront injustice?", "What is the novel's vision of empathy?", "How do we read this text today?"],
+        "characters": ["Is Atticus a perfect moral guide or a complicated one?", "How does Boo Radley function as symbol and person?"],
+        "symbols": ["What does the mockingbird represent?", "Analyze the Radley house."],
+        "quotes": ["'You never really understand a person until you climb into his skin...' — limits of this metaphor?"]
+      }
+    },
+    {
+      "id": "nineteen-eighty-four",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1949,
+      "letter": "N",
+      "synopsis": "Winston Smith rebels against Big Brother's totalitarian surveillance state — and learns how thoroughly power can reshape reality itself.",
+      "prompts": {
+        "themes": ["How does language control thought?", "Is Winston's defeat inevitable?", "What parallels do you see in contemporary surveillance culture?"],
+        "characters": ["What does Julia want that Winston doesn't?", "How does O'Brien embody the system's intelligence?"],
+        "symbols": ["What does the glass paperweight represent?", "Analyze Room 101."],
+        "quotes": ["'War is peace, freedom is slavery, ignorance is strength' — how does doublethink work?"]
+      }
+    },
+    {
+      "id": "odyssey",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "genre": "Fiction",
+      "type": "Epic",
+      "audience": "Adult",
+      "year": -800,
+      "letter": "O",
+      "synopsis": "Odysseus struggles homeward for ten years after the Trojan War, battling gods, monsters, and his own hunger for home.",
+      "prompts": {
+        "themes": ["What defines home — place, people, or identity?", "How is hospitality (xenia) a moral law?", "Is Odysseus a hero or a trickster?"],
+        "characters": ["How does Penelope match Odysseus in cunning?", "What is Telemachus's arc?"],
+        "symbols": ["What does the sea represent?", "Analyze the bed rooted in the olive tree."],
+        "quotes": ["Discuss a moment where Odysseus weeps — what makes him cry?"]
+      }
+    },
+    {
+      "id": "pride-prejudice",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1813,
+      "letter": "P",
+      "synopsis": "Elizabeth Bennet navigates manners, marriage, and misunderstanding with the proud Mr. Darcy in Regency England.",
+      "prompts": {
+        "themes": ["How does Austen critique class and marriage markets?", "What must both Elizabeth and Darcy unlearn?", "Is this a romance or a social novel?"],
+        "characters": ["Why is Elizabeth one of literature's great protagonists?", "How does Wickham function as a foil?"],
+        "symbols": ["What do Pemberley and Longbourn represent?", "Track eyes and seeing throughout."],
+        "quotes": ["'Till this moment I never knew myself.' — discuss self-knowledge."]
+      }
+    },
+    {
+      "id": "rebecca",
+      "title": "Rebecca",
+      "author": "Daphne du Maurier",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1938,
+      "letter": "R",
+      "synopsis": "The second Mrs. de Winter arrives at Manderley haunted by the glamorous, dead Rebecca — and the secrets Maximilian de Winter hides.",
+      "prompts": {
+        "themes": ["How does jealousy construct identity?", "What does the novel say about gendered power in marriage?", "Is Rebecca the villain or the victim?"],
+        "characters": ["Why do we never learn the narrator's name?", "How does Mrs. Danvers embody Rebecca's ghost?"],
+        "symbols": ["Analyze Manderley as character.", "What does the costume ball represent?"],
+        "quotes": ["'Last night I dreamt I went to Manderley again.' — why is this opening unforgettable?"]
+      }
+    },
+    {
+      "id": "sula",
+      "title": "Sula",
+      "author": "Toni Morrison",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1973,
+      "letter": "S",
+      "synopsis": "In the Bottom, a Black Ohio neighborhood, Nel and Sula's lifelong friendship ruptures when Sula returns as a dangerous nonconformist.",
+      "prompts": {
+        "themes": ["What does friendship cost between women?", "How does a community define evil?", "What is the relationship between freedom and loneliness?"],
+        "characters": ["Is Sula a villain or an avatar of freedom?", "How does Nel's conformity shape her choices?"],
+        "symbols": ["What does the plague of robins signify?", "Analyze the tunnel disaster."],
+        "quotes": ["Discuss Morrison's line about how people die — what makes it true or harsh?"]
+      }
+    },
+    {
+      "id": "things-fall-apart",
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1958,
+      "letter": "T",
+      "synopsis": "Okonkwo, a proud Igbo warrior, watches his world collapse under colonial Christianity and British administration.",
+      "prompts": {
+        "themes": ["How does Achebe counter colonial narratives?", "What causes things to 'fall apart' — internal or external forces?", "Is Okonkwo a tragic hero?"],
+        "characters": ["How does Nwoye's conversion divide father and son?", "What does Mr. Brown represent versus Rev. Smith?"],
+        "symbols": ["What do yams represent?", "Analyze the locusts."],
+        "quotes": ["Discuss the District Commissioner's planned title — why is it devastating?"]
+      }
+    },
+    {
+      "id": "ulysses",
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1922,
+      "letter": "U",
+      "synopsis": "Leopold Bloom wanders Dublin on June 16, 1904, in parallel with Homer's Odyssey — one ordinary day rendered infinite.",
+      "prompts": {
+        "themes": ["How does Joyce elevate the mundane?", "What is the novel's relationship to Homer?", "Is Bloom heroic?"],
+        "characters": ["How do Stephen and Bloom mirror each other?", "What makes Molly's soliloquy a feminist landmark?"],
+        "symbols": ["Track water and burial imagery.", "What does the lack of a home key mean for Bloom?"],
+        "quotes": ["Pick one sentence from Molly's monologue — what does stream-of-consciousness unlock?"]
+      }
+    },
+    {
+      "id": "virgin-suicides",
+      "title": "The Virgin Suicides",
+      "author": "Jeffrey Eugenides",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1993,
+      "letter": "V",
+      "synopsis": "The Lisbon sisters fascinate their suburban neighborhood — until, one by one, they die by suicide, remembered only by the boys who obsessed over them.",
+      "prompts": {
+        "themes": ["Who owns the girls' story — the narrators or the girls?", "How does suburbia become Gothic?", "What does the novel say about male gaze and myth-making?"],
+        "characters": ["Can we know any Lisbon sister as an individual?", "How do the parents' repression drive tragedy?"],
+        "symbols": ["Analyze the fence and the house.", "What do the prom dresses represent?"],
+        "quotes": ["Discuss the plural 'we' narrator — what does it reveal about memory?"]
+      }
+    },
+    {
+      "id": "wuthering-heights",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1847,
+      "letter": "W",
+      "synopsis": "Heathcliff and Catherine's destructive passion echoes across two generations on the Yorkshire moors.",
+      "prompts": {
+        "themes": ["Is this a love story or a revenge tragedy?", "How does the moors shape temperament?", "Can passion transcend death in this novel?"],
+        "characters": ["Is Heathcliff a Byronic hero or a monster?", "How does Nelly Dean shape our judgment?"],
+        "symbols": ["What do the two houses — Wuthering Heights and Thrushcross Grange — represent?", "Analyze the window Catherine appears at."],
+        "quotes": ["'I am Heathcliff' — what does Catherine mean?"]
+      }
+    },
+    {
+      "id": "yellow-wallpaper",
+      "title": "The Yellow Wallpaper",
+      "author": "Charlotte Perkins Gilman",
+      "genre": "Fiction",
+      "type": "Short Story",
+      "audience": "Adult",
+      "year": 1892,
+      "letter": "Y",
+      "synopsis": "A woman confined to a nursery for a 'rest cure' becomes obsessed with the room's wallpaper — and what moves behind it.",
+      "prompts": {
+        "themes": ["How does medical patriarchy silence women?", "What is the relationship between creativity and madness?", "Is the ending liberation or breakdown?"],
+        "characters": ["How does John embody well-meaning cruelty?", "Who is the woman in the wallpaper?"],
+        "symbols": ["Track the wallpaper's evolution.", "What does the barred window represent?"],
+        "quotes": ["'I've got out at last...' — discuss the final line."]
+      }
+    },
+    {
+      "id": "zoo-story",
+      "title": "The Zoo Story",
+      "author": "Edward Albee",
+      "genre": "Fiction",
+      "type": "Play",
+      "audience": "Adult",
+      "year": 1959,
+      "letter": "Z",
+      "synopsis": "On a Central Park bench, Peter meets Jerry, whose bizarre confession escalates into violent connection.",
+      "prompts": {
+        "themes": ["What does loneliness drive people to do?", "How do class differences shape the encounter?", "Is connection possible without pain?"],
+        "characters": ["Why does Jerry need Peter?", "Is Peter complicit in the ending?"],
+        "symbols": ["What does the dog story allegorize?", "How is the zoo a metaphor for modern life?"],
+        "quotes": ["Discuss Jerry's line about going to the zoo — what is he really seeking?"]
+      },
+      "collections": ["classics"]
+    },
+    {
+      "id": "iliad",
+      "title": "The Iliad",
+      "author": "Homer",
+      "genre": "Fiction",
+      "type": "Epic",
+      "audience": "Adult",
+      "year": -750,
+      "letter": "I",
+      "collections": ["classics"],
+      "synopsis": "Achilles' wrath shapes the final year of the Trojan War — an epic of honor, mortality, and the cost of heroic pride.",
+      "prompts": {
+        "themes": ["What is the poem's argument about glory versus life?", "How does fate (moira) interact with human choice?", "Does the Iliad celebrate or mourn war?"],
+        "characters": ["How does Achilles change from withdrawal to compassion?", "What makes Hector the poem's moral counterweight?", "How do the gods function as audience and instigators?"],
+        "symbols": ["Track armor, shields, and funeral rites.", "What does the shield of Achilles represent as a world in miniature?"],
+        "quotes": ["Discuss Achilles' choice of two fates — short glory or long obscurity."]
+      }
+    },
+    {
+      "id": "aeneid",
+      "title": "The Aeneid",
+      "author": "Virgil",
+      "genre": "Fiction",
+      "type": "Epic",
+      "audience": "Adult",
+      "year": -19,
+      "letter": "A",
+      "collections": ["classics"],
+      "synopsis": "Aeneas flees fallen Troy to found Rome, torn between duty to destiny and love for Dido of Carthage.",
+      "prompts": {
+        "themes": ["How does Virgil rewrite Homeric epic for Roman imperial identity?", "Is pietas (duty) a virtue or a cruelty?", "How does the poem mourn what empire destroys?"],
+        "characters": ["Is Aeneas a hero or an instrument of fate?", "How does Dido's tragedy reframe the founding myth?", "What is Turnus's claim to our sympathy?"],
+        "symbols": ["Analyze the golden bough.", "How do funeral games and prophecies structure destiny?"],
+        "quotes": ["'I sing of arms and the man' — how does Virgil's opening set the poem's tensions?"]
+      }
+    },
+    {
+      "id": "agamemnon",
+      "title": "Agamemnon",
+      "author": "Aeschylus",
+      "genre": "Fiction",
+      "type": "Play",
+      "audience": "Adult",
+      "year": -458,
+      "letter": "A",
+      "collections": ["classics"],
+      "synopsis": "King Agamemnon returns from Troy to Argos, where Clytemnestra's vengeance for their daughter Iphigenia awaits.",
+      "prompts": {
+        "themes": ["How does the Oresteia explore justice versus blood vengeance?", "What role does hubris play in royal return?", "How does Aeschylus stage gender and power?"],
+        "characters": ["Is Clytemnestra a monster, a judge, or both?", "How does the Chorus mediate our moral response?", "What does Cassandra see that others cannot?"],
+        "symbols": ["Track the net, the axe, and the crimson path.", "What does the watchman's beacon opening signify?"],
+        "quotes": ["Discuss the carpet scene — invitation or trap?"]
+      }
+    },
+    {
+      "id": "ajax",
+      "title": "Ajax",
+      "author": "Sophocles",
+      "genre": "Fiction",
+      "type": "Play",
+      "audience": "Adult",
+      "year": -450,
+      "letter": "A",
+      "collections": ["classics"],
+      "synopsis": "Humiliated when Achilles' armor is awarded to Odysseus, Ajax descends into madness and confronts the limits of heroic honor.",
+      "prompts": {
+        "themes": ["What happens when public honor collapses?", "How does Sophocles treat suicide and legacy?", "Is Ajax's rigidity tragic or self-destructive?"],
+        "characters": ["How does Tecmessa humanize Ajax?", "What does Odysseus's mercy at the end accomplish?"],
+        "symbols": ["Analyze the sword Ajax receives from Hector.", "What does madness look like on stage?"],
+        "quotes": ["Discuss Ajax's speech on inner versus outer excellence."]
+      }
+    },
+    {
+      "id": "oedipus-rex",
+      "title": "Oedipus Rex",
+      "author": "Sophocles",
+      "genre": "Fiction",
+      "type": "Play",
+      "audience": "Adult",
+      "year": -429,
+      "letter": "O",
+      "collections": ["classics"],
+      "synopsis": "Oedipus investigates a plague in Thebes and uncovers the horrifying truth of his own identity.",
+      "prompts": {
+        "themes": ["Is Oedipus punished for fate or for the passion of his inquiry?", "How does knowledge function as tragedy?", "What is the play's theory of political leadership?"],
+        "characters": ["How does Tiresias know differently than Oedipus sees?", "What does Jocasta try to stop — and why?"],
+        "symbols": ["Track blindness and sight throughout.", "What do crossroads represent?"],
+        "quotes": ["'Count no man happy till he dies' — when does this land?"]
+      }
+    },
+    {
+      "id": "lysistrata",
+      "title": "Lysistrata",
+      "author": "Aristophanes",
+      "genre": "Fiction",
+      "type": "Play",
+      "audience": "Adult",
+      "year": -411,
+      "letter": "L",
+      "collections": ["classics"],
+      "synopsis": "Athenian and Spartan women withhold intimacy to force an end to the Peloponnesian War — bawdy, political, and surprisingly strategic.",
+      "prompts": {
+        "themes": ["Can comedy accomplish what tragedy cannot?", "How does Aristophanes satirize war and masculinity?", "Is Lysistrata a feminist hero or a comic device?"],
+        "characters": ["How does Lysistrata wield language as power?", "What do the Magistrate and old men represent?"],
+        "symbols": ["Analyze the Acropolis occupation.", "What does the weaving metaphor accomplish?"],
+        "quotes": ["Pick a passage where innuendo carries political argument."]
+      }
+    },
+    {
+      "id": "symposium",
+      "title": "The Symposium",
+      "author": "Plato",
+      "genre": "Nonfiction",
+      "type": "Philosophy",
+      "audience": "Adult",
+      "year": -385,
+      "letter": "S",
+      "collections": ["classics"],
+      "synopsis": "At a drinking party, Athenian intellectuals deliver competing speeches on the nature of love — culminating in Socrates' ladder of beauty.",
+      "prompts": {
+        "themes": ["What are the competing Greek theories of eros?", "How does Plato connect love to philosophy?", "Why frame philosophy as after-dinner entertainment?"],
+        "characters": ["How does Alcibiades disrupt the order of speeches?", "What makes Diotima's voice radical in the dialogue?"],
+        "symbols": ["What does the symposium setting imply about truth and pleasure?", "Track ascending imagery in Socrates' account."],
+        "quotes": ["Discuss Aristophanes' myth of the split halves — still useful today?"]
+      }
+    },
+    {
+      "id": "republic",
+      "title": "The Republic",
+      "author": "Plato",
+      "genre": "Nonfiction",
+      "type": "Philosophy",
+      "audience": "Adult",
+      "year": -375,
+      "letter": "R",
+      "collections": ["classics"],
+      "synopsis": "Socrates investigates justice in the soul and the city, proposing the philosopher-king and the famous allegory of the cave.",
+      "prompts": {
+        "themes": ["Is Plato's ideal city liberating or authoritarian?", "How does the cave allegory define education?", "What is the relationship between art and truth in Book X?"],
+        "characters": ["Why does Thrasymachus challenge Socrates so aggressively?", "How does Glaucon's ring of Gyges test morality?"],
+        "symbols": ["Analyze the divided line and the cave.", "What does the myth of Er accomplish at the close?"],
+        "quotes": ["'The untroubled city' — can we read Book V without modern discomfort?"]
+      }
+    },
+    {
+      "id": "meditations",
+      "title": "Meditations",
+      "author": "Marcus Aurelius",
+      "genre": "Nonfiction",
+      "type": "Philosophy",
+      "audience": "Adult",
+      "year": 180,
+      "letter": "M",
+      "collections": ["classics"],
+      "synopsis": "The Roman emperor's private notebooks on Stoic discipline, mortality, and governing oneself before governing others.",
+      "prompts": {
+        "themes": ["How does Stoicism address power and impermanence?", "Is Marcus writing for himself or posterity?", "What is the Stoic relationship to emotion?"],
+        "characters": ["How does Marcus portray other people — enemies, colleagues, the gods?", "What kind of self does the text construct?"],
+        "symbols": ["Track cosmic scale imagery.", "What does the 'inner citadel' mean?"],
+        "quotes": ["Choose one maxim — does it hold under pressure?"]
+      }
+    },
+    {
+      "id": "after-virtue",
+      "title": "After Virtue",
+      "author": "Alasdair MacIntyre",
+      "genre": "Nonfiction",
+      "type": "Philosophy",
+      "audience": "Adult",
+      "year": 1981,
+      "letter": "A",
+      "collections": ["classics"],
+      "synopsis": "MacIntyre argues modern moral discourse is in fragments and revives Aristotelian virtue ethics as a coherent alternative.",
+      "prompts": {
+        "themes": ["Is moral language in crisis?", "How does MacIntyre use historical narrative as argument?", "What would a practice-based ethics look like in art history?"],
+        "characters": ["How does MacIntyre stage rival traditions — Aristotle, the Enlightenment, Nietzsche?"],
+        "symbols": ["What does the 'catastrophe' of the Enlightenment represent?", "Analyze the Benedictine monastery epilogue."],
+        "quotes": ["Discuss the claim that we live among moral fragments."]
+      }
+    },
+    {
+      "id": "histories-herodotus",
+      "title": "The Histories",
+      "author": "Herodotus",
+      "genre": "Nonfiction",
+      "type": "History",
+      "audience": "Adult",
+      "year": -430,
+      "letter": "H",
+      "collections": ["classics"],
+      "synopsis": "Herodotus investigates the clash of Greeks and Persians — and the customs of peoples across the known world — inventing history as inquiry.",
+      "prompts": {
+        "themes": ["What is Herodotus's method — storytelling or evidence?", "How does he explain freedom versus tyranny?", "Why does ethnography sit beside battle narrative?"],
+        "characters": ["How does Xerxes embody imperial overreach?", "What makes Artemisia memorable?", "How does Themistocles operate as strategist?"],
+        "symbols": ["Track omens, dreams, and oracles.", "What do bridges and rivers signify in Persian campaigns?"],
+        "quotes": ["Discuss a digression — why does Herodotus wander from the main war?"]
+      }
+    },
+    {
+      "id": "peloponnesian-war",
+      "title": "History of the Peloponnesian War",
+      "author": "Thucydides",
+      "genre": "Nonfiction",
+      "type": "History",
+      "audience": "Adult",
+      "year": -400,
+      "letter": "H",
+      "collections": ["classics"],
+      "synopsis": "Thucydides chronicles the devastating war between Athens and Sparta with speeches, sieges, and the plague — aiming for lasting political truth.",
+      "prompts": {
+        "themes": ["How does Thucydides differ from Herodotus?", "What does the Melian Dialogue say about power?", "Is Pericles' funeral oration sincere propaganda?"],
+        "characters": ["How does Alcibiades embody Athenian instability?", "What does Nicias's caution cost?"],
+        "symbols": ["Analyze the plague as civic metaphor.", "What does the Sicilian expedition represent?"],
+        "quotes": ["'The strong do what they can' — is Thucydides cynical or realistic?"]
+      }
+    },
+    {
+      "id": "agricola",
+      "title": "Agricola",
+      "author": "Tacitus",
+      "genre": "Nonfiction",
+      "type": "Biography",
+      "audience": "Adult",
+      "year": 98,
+      "letter": "A",
+      "collections": ["classics"],
+      "synopsis": "Tacitus memorializes his father-in-law Agricola, Roman governor of Britain — a study in virtuous service under a tyrannical emperor.",
+      "prompts": {
+        "themes": ["How does biography become political critique?", "What does Tacitus say about empire and colonization?", "Can virtue survive under Domitian?"],
+        "characters": ["How is Agricola idealized?", "What role does Calgacus's speech play?"],
+        "symbols": ["Track Britain as edge-of-world imagery.", "What does silence under tyranny mean?"],
+        "quotes": ["Discuss Calgacus on Roman peace as desolation."]
+      }
+    },
+    {
+      "id": "spqr",
+      "title": "SPQR",
+      "author": "Mary Beard",
+      "genre": "Nonfiction",
+      "type": "History",
+      "audience": "Adult",
+      "year": 2015,
+      "letter": "S",
+      "collections": ["classics"],
+      "synopsis": "Mary Beard retells a thousand years of Roman history — from mythic origins to Caracalla — with attention to ordinary lives and contested sources.",
+      "prompts": {
+        "themes": ["How does Beard demythologize Rome without diminishing it?", "What does SPQR mean as a political slogan?", "How do we read Roman history in the 21st century?"],
+        "characters": ["How does Beard treat figures like Cicero or the Gracchi?", "What do slaves and women reveal about Roman society?"],
+        "symbols": ["Analyze the Colosseum as cultural symbol.", "What do coins and inscriptions add to narrative?"],
+        "quotes": ["Discuss Beard's approach to fragmentary evidence."]
+      }
+    },
+    {
+      "id": "metamorphoses",
+      "title": "Metamorphoses",
+      "author": "Ovid",
+      "genre": "Fiction",
+      "type": "Epic",
+      "audience": "Adult",
+      "year": 8,
+      "letter": "M",
+      "collections": ["classics"],
+      "synopsis": "Ovid's kaleidoscopic poem links mythic tales of transformation from creation to Julius Caesar — witty, violent, and endlessly influential.",
+      "prompts": {
+        "themes": ["Why is transformation Ovid's central metaphor?", "How does the poem handle power and vulnerability?", "How has Ovid shaped Western art?"],
+        "characters": ["Compare Daphne, Arachne, and Philomela as artists/victims.", "How does Orpheus function across books?"],
+        "symbols": ["Track bodies becoming trees, stones, constellations.", "What does the poem's frame from chaos to Rome accomplish?"],
+        "quotes": ["Pick one myth — how would you illustrate it?"]
+      }
+    },
+    {
+      "id": "marriage-of-cadmus",
+      "title": "The Marriage of Cadmus and Harmony",
+      "author": "Roberto Calasso",
+      "genre": "Nonfiction",
+      "type": "Essay",
+      "audience": "Adult",
+      "year": 1988,
+      "letter": "M",
+      "collections": ["classics"],
+      "synopsis": "Calasso retells Greek myth as a luminous essay — gods, mortals, and stories that explain how the West imagines itself.",
+      "prompts": {
+        "themes": ["Is myth a form of knowledge?", "How does Calasso blend scholarship and narrative?", "What is the marriage of Cadmus and Harmony?"],
+        "characters": ["How does Calasso treat Zeus, Athena, and Dionysus differently?", "Why center Thetis and Achilles?"],
+        "symbols": ["Track weddings, sacrifices, and origins.", "How do images from vase painting enter the prose?"],
+        "quotes": ["Discuss Calasso's claim that myth is what's left when everything else is explained."]
+      }
+    },
+    {
+      "id": "i-claudius",
+      "title": "I, Claudius",
+      "author": "Robert Graves",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1934,
+      "letter": "I",
+      "collections": ["classics"],
+      "synopsis": "The stammering, overlooked Claudius narrates the Julio-Claudian dynasty — Livia's intrigues, Tiberius's cruelty, and the making of an unlikely emperor.",
+      "prompts": {
+        "themes": ["How does Graves use fiction to fill historiographic gaps?", "What is the politics of the imperial family?", "Can the fool survive the palace?"],
+        "characters": ["Is Livia the true architect of power?", "How does Claudius's disability shape perception?"],
+        "symbols": ["Track writing and historiography as survival.", "What do omens and prophecies do in the novel?"],
+        "quotes": ["Discuss Claudius's relationship to Tacitus and Suetonius."]
+      }
+    },
+    {
+      "id": "ways-of-seeing",
+      "title": "Ways of Seeing",
+      "author": "John Berger",
+      "genre": "Nonfiction",
+      "type": "Essay",
+      "audience": "Adult",
+      "year": 1972,
+      "letter": "W",
+      "collections": ["fine-arts"],
+      "synopsis": "Berger's landmark book and BBC series dismantle how we look at oil paintings, advertising, and the female nude — linking aesthetics to power.",
+      "prompts": {
+        "themes": ["How does reproduction change what images mean?", "What is the male gaze in Berger's terms?", "How does capitalism alter visual culture?"],
+        "characters": ["Berger writes as teacher — how does his voice position the viewer?"],
+        "symbols": ["Compare original paintings with advertisements.", "What do mirrors and poses signify?"],
+        "quotes": ["'Seeing comes before words' — do you agree?"]
+      }
+    },
+    {
+      "id": "story-of-art",
+      "title": "The Story of Art",
+      "author": "E.H. Gombrich",
+      "genre": "Nonfiction",
+      "type": "Reference",
+      "audience": "Adult",
+      "year": 1950,
+      "letter": "S",
+      "collections": ["fine-arts"],
+      "synopsis": "Gombrich's accessible survey traces world art from prehistoric caves to modern experiment — emphasizing innovation within tradition.",
+      "prompts": {
+        "themes": ["How does Gombrich define artistic 'progress'?", "What is gained and lost in a single narrative of art?", "How does he treat non-Western art?"],
+        "characters": ["Which artist biographies does Gombrich foreground — and why?"],
+        "symbols": ["Pick one plate — how does Gombrich read form and function?", "What does 'the Beholder's share' imply?"],
+        "quotes": ["Discuss 'There really is no such thing as Art' — what is he arguing?"]
+      }
+    },
+    {
+      "id": "work-of-art-age",
+      "title": "The Work of Art in the Age of Mechanical Reproduction",
+      "author": "Walter Benjamin",
+      "genre": "Nonfiction",
+      "type": "Essay",
+      "audience": "Adult",
+      "year": 1935,
+      "letter": "W",
+      "collections": ["fine-arts"],
+      "synopsis": "Benjamin argues that photography and film destroy the 'aura' of unique artworks — transforming politics, tradition, and how masses perceive art.",
+      "prompts": {
+        "themes": ["What is aura — and do digital images have it?", "How does reproduction democratize or cheapen art?", "What is Benjamin's theory of fascism and aesthetics?"],
+        "characters": ["How does Benjamin stage Marx, Baudelaire, and the collector?"],
+        "symbols": ["Analyze the cult value versus exhibition value of images.", "What does the cathedral in the age of tourism mean?"],
+        "quotes": ["Discuss 'the urge to bring things closer' in the age of Instagram."]
+      }
+    },
+    {
+      "id": "on-photography",
+      "title": "On Photography",
+      "author": "Susan Sontag",
+      "genre": "Nonfiction",
+      "type": "Essay",
+      "audience": "Adult",
+      "year": 1977,
+      "letter": "O",
+      "collections": ["fine-arts"],
+      "synopsis": "Sontag's essays examine how photographs alter our ethics, memory, and relationship to suffering — from surrealism to war reporting.",
+      "prompts": {
+        "themes": ["Do photographs explain or colonize experience?", "What is the ethics of looking at pain?", "How has the image world changed since 1977?"],
+        "characters": ["How does Sontag write as cultural critic versus artist's ally?"],
+        "symbols": ["Track cameras, albums, and postcards.", "What does the 'image-world' mean today?"],
+        "quotes": ["'To photograph is to appropriate' — still true in the selfie era?"]
+      }
+    },
+    {
+      "id": "lives-of-artists",
+      "title": "Lives of the Artists",
+      "author": "Giorgio Vasari",
+      "genre": "Nonfiction",
+      "type": "Biography",
+      "audience": "Adult",
+      "year": 1550,
+      "letter": "L",
+      "collections": ["fine-arts"],
+      "synopsis": "Vasari's pioneering artist biographies from Cimabue to Michelangelo invent art history as genre — blending anecdote, gossip, and Renaissance triumph.",
+      "prompts": {
+        "themes": ["How does Vasari create the myth of the Renaissance?", "What is the relationship between biography and evaluation?", "Which anecdotes are fabrication — and why?"],
+        "characters": ["Compare Giotto, Leonardo, and Michelangelo as Vasari shapes them.", "How does Vasari himself enter the story?"],
+        "symbols": ["Track progress from 'rude' Gothic to refined classicism.", "What do workshops and patronage reveal?"],
+        "quotes": ["Discuss Vasari on Giotto drawing a perfect O — myth or method?"]
+      }
+    },
+    {
+      "id": "agony-and-ecstasy",
+      "title": "The Agony and the Ecstasy",
+      "author": "Irving Stone",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1961,
+      "letter": "A",
+      "collections": ["fine-arts"],
+      "synopsis": "Irving Stone dramatizes Michelangelo's life — from Carrara marble to the Sistine ceiling — as art, faith, and patronage collide.",
+      "prompts": {
+        "themes": ["How does fiction fill gaps in artistic biography?", "What is the cost of genius in Stone's portrait?", "How do popes and politics shape masterpieces?"],
+        "characters": ["How is Michelangelo both rebel and servant?", "What role does Vittoria Colonna play?"],
+        "symbols": ["Track marble, scaffolding, and unfinished work.", "What does the Sistine ceiling mean as labor?"],
+        "quotes": ["Discuss a scene of physical strain — how does Stone embody making?"]
+      }
+    },
+    {
+      "id": "girl-with-pearl-earring",
+      "title": "Girl with a Pearl Earring",
+      "author": "Tracy Chevalier",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 1999,
+      "letter": "G",
+      "collections": ["fine-arts"],
+      "synopsis": "A fictional servant girl becomes the subject of Vermeer's painting in 17th-century Delft — exploring gaze, class, and the silence of images.",
+      "prompts": {
+        "themes": ["Who owns the story behind a portrait?", "How does Chevalier imagine the studio as social space?", "What is the erotics of looking in Vermeer?"],
+        "characters": ["How does Griet negotiate household power?", "What does Vermeer see that others miss?"],
+        "symbols": ["Analyze the pearl, the turban, and the crack in the palette.", "What does grinding pigment represent?"],
+        "quotes": ["Discuss the moment Griet pierces her ear — consent and spectacle."]
+      }
+    },
+    {
+      "id": "pompeii",
+      "title": "Pompeii",
+      "author": "Robert Harris",
+      "genre": "Fiction",
+      "type": "Novel",
+      "audience": "Adult",
+      "year": 2003,
+      "letter": "P",
+      "collections": ["classics", "fine-arts"],
+      "synopsis": "An engineer races against Vesuvius's eruption in 79 CE — Harris reconstructs Roman urban life from aqueducts to the forum.",
+      "prompts": {
+        "themes": ["How does disaster fiction illuminate daily antiquity?", "What does infrastructure reveal about empire?", "How do we romanticize Pompeii?"],
+        "characters": ["How does Attilius embody Roman practical virtue?", "What do Pliny the Elder and corrupt officials represent?"],
+        "symbols": ["Track water, ash, and the volcano as character.", "What does the amphitheater scene signify?"],
+        "quotes": ["Discuss Harris's use of archaeological detail as plot engine."]
+      }
+    },
+    {
+      "id": "rubicon",
+      "title": "Rubicon",
+      "author": "Tom Holland",
+      "genre": "Nonfiction",
+      "type": "History",
+      "audience": "Adult",
+      "year": 2003,
+      "letter": "R",
+      "collections": ["classics"],
+      "synopsis": "Holland narrates the fall of the Roman Republic — from Sulla to Augustus — with the pace of political thriller and classical sweep.",
+      "prompts": {
+        "themes": ["Why does the Republic collapse?", "How does Holland make ancient politics contemporary?", "What is the moral of Caesar's crossing?"],
+        "characters": ["Compare Caesar, Pompey, and Cicero's ambitions.", "How does Cleopatra function in Roman narrative?"],
+        "symbols": ["What does the Rubicon represent as point of no return?", "Track blood, proscription, and triumph."],
+        "quotes": ["Discuss Holland's opening — why start with Sulla's severed head?"]
+      }
+    },
+    {
+      "id": "etruscans-uncovered",
+      "title": "The Etruscans Uncovered",
+      "author": "UC Berkeley Hearst Collection",
+      "genre": "Nonfiction",
+      "type": "Exhibition Catalog",
+      "audience": "Adult",
+      "year": 2026,
+      "letter": "E",
+      "collections": ["classics", "fine-arts"],
+      "synopsis": "Companion to the Brown Gallery exhibit on the Phoebe A. Hearst Collection — Berkeley's Etruscan artifacts and what they reveal about pre-Roman Italy.",
+      "prompts": {
+        "themes": ["Why are the Etruscans overshadowed by Greece and Rome?", "How do museum collections shape scholarship?", "What does Hearst's collecting era tell us?"],
+        "characters": ["Who were the Etruscan elites buried in these objects?", "How do curators narrate incomplete archives?"],
+        "symbols": ["Analyze funerary urns, bronzes, and painted tombs.", "What does excavation photography add?"],
+        "quotes": ["Discuss one object label — what story does the museum choose to tell?"]
+      }
+    },
+    {
+      "id": "against-interpretation",
+      "title": "Against Interpretation",
+      "author": "Susan Sontag",
+      "genre": "Nonfiction",
+      "type": "Essay Collection",
+      "audience": "Adult",
+      "year": 1966,
+      "letter": "A",
+      "collections": ["fine-arts"],
+      "synopsis": "Sontag's influential essays champion an erotics of art over hermeneutics — from camp and style to Godard and science fiction.",
+      "prompts": {
+        "themes": ["What does Sontag mean by 'against interpretation'?", "How does camp subvert seriousness?", "Is transparency of content a false goal for art?"],
+        "characters": ["How does Sontag position herself among critics and artists?"],
+        "symbols": ["Track surfaces, style, and silence.", "What does 'notes on camp' redefine?"],
+        "quotes": ["'In place of a hermeneutics we need an erotics of art' — provocative or useful?"]
+      }
+    }
+  ]
+}

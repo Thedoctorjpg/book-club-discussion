@@ -1,0 +1,71 @@
+{
+  "clubs": [
+    {
+      "id": "default-club",
+      "name": "The Page Turners",
+      "description": "A welcoming club for readers who love deep conversation about character, theme, and the sentences that stay with you.",
+      "createdAt": "2026-01-15T10:00:00.000Z",
+      "members": ["Alex", "Jordan", "Sam", "Riley"]
+    }
+  ],
+  "meetings": [
+    {
+      "id": "meeting-1",
+      "clubId": "default-club",
+      "bookId": "gatsby",
+      "date": "2026-07-10T19:00:00.000Z",
+      "location": "Riverside Library — Room B",
+      "notes": "Bring your favorite passage. We'll start with the green light symbol."
+    },
+    {
+      "id": "meeting-ahc-1",
+      "clubId": "default-club",
+      "bookId": "ways-of-seeing",
+      "date": "2026-08-14T19:00:00.000Z",
+      "location": "308 Doe Library — Art History/Classics (or video)",
+      "notes": "Berkeley AHC curated list kickoff. Read Ch. 1–3; bring one ad and one painting to compare."
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1",
+      "bookId": "gatsby",
+      "clubId": "default-club",
+      "promptCategory": "themes",
+      "prompt": "Is the American Dream aspirational or destructive here?",
+      "author": "Alex",
+      "createdAt": "2026-06-01T14:30:00.000Z",
+      "replies": [
+        {
+          "id": "reply-1",
+          "author": "Jordan",
+          "text": "I think Fitzgerald makes the Dream aspirational only in retrospect — Gatsby's hope is magnificent, but the machinery that funds it is rotten. The dream survives in Nick's narration, not in Gatsby's outcome.",
+          "createdAt": "2026-06-02T09:15:00.000Z"
+        },
+        {
+          "id": "reply-2",
+          "author": "Sam",
+          "text": "The green light works because it's always across the water — close enough to orient your life around, never close enough to possess. That's the Dream's cruel geometry.",
+          "createdAt": "2026-06-02T18:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "thread-2",
+      "bookId": "beloved",
+      "clubId": "default-club",
+      "promptCategory": "quotes",
+      "prompt": "'Freeing yourself was one thing; claiming ownership of that freed self was another.'",
+      "author": "Riley",
+      "createdAt": "2026-06-10T11:00:00.000Z",
+      "replies": [
+        {
+          "id": "reply-3",
+          "author": "Alex",
+          "text": "Sethe's arc is about the second clause — legal freedom didn't grant her ownership of her story or her motherhood. Beloved forces that reckoning.",
+          "createdAt": "2026-06-11T08:20:00.000Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "lists": [
+    {
+      "id": "berkeley-ahc",
+      "title": "Art History & Classics",
+      "institution": "UC Berkeley Library",
+      "sourceUrl": "https://www.lib.berkeley.edu/visit/art-history-classics",
+      "location": "308 Doe Library, 3rd floor — Berkeley, CA",
+      "hours": "Mon–Fri 11 a.m.–5 p.m.",
+      "contact": "ahc-library@berkeley.edu · 510-642-7361",
+      "description": "A curated reading path aligned with the Art History/Classics Library — home to the Fine Arts Collection (200,000+ volumes) and the Classics Collection covering all aspects of ancient Greco-Roman civilization. Supports research in History of Art, Art Practice, Classics, Ancient History, and Mediterranean Archaeology.",
+      "collections": [
+        {
+          "name": "Classics Collection",
+          "url": "https://www.lib.berkeley.edu/visit/art-history-classics/collections?section=classics-collection",
+          "focus": "Greco-Roman texts, philology, ancient history, classical philosophy, site reports, and legacy cultures from Byzantium to early Christianity."
+        },
+        {
+          "name": "Fine Arts Collection",
+          "url": "https://www.lib.berkeley.edu/visit/art-history-classics/collections?section=fine-arts-collection",
+          "focus": "Ancient through contemporary art, exhibition catalogs, catalogue raisonnés, and visual culture across Europe, Asia, and the Americas."
+        }
+      ],
+      "resources": [
+        { "label": "Art history resources", "url": "https://guides.lib.berkeley.edu/arthistory" },
+        { "label": "Classics resources", "url": "https://guides.lib.berkeley.edu/classics-resources" },
+        { "label": "Art history course guides", "url": "https://guides.lib.berkeley.edu/courseguides" },
+        { "label": "New art history books", "url": "https://guides.lib.berkeley.edu/arthistory/newbooks" },
+        { "label": "UC Library Search", "url": "https://search.library.berkeley.edu/" }
+      ],
+      "librarians": [
+        { "name": "Lynn Cunningham", "role": "Art Librarian", "email": "lynncunningham@berkeley.edu" },
+        { "name": "Jeremy Ott", "role": "Classics & Germanic Studies Librarian", "email": "jott@berkeley.edu" }
+      ],
+      "sections": [
+        {
+          "id": "epic-foundations",
+          "title": "Epic Foundations",
+          "collection": "Classics",
+          "description": "The philological core — Homeric and Virgilian epic that anchors Berkeley's classical studies.",
+          "bookIds": ["iliad", "odyssey", "aeneid"]
+        },
+        {
+          "id": "drama-tragedy",
+          "title": "Greek Drama & Tragedy",
+          "collection": "Classics",
+          "description": "Stage conflict, fate, and civic identity — from Aeschylus to Aristophanes.",
+          "bookIds": ["agamemnon", "oedipus-rex", "lysistrata", "ajax"]
+        },
+        {
+          "id": "philosophy-ethics",
+          "title": "Classical Philosophy",
+          "collection": "Classics",
+          "description": "Platonic dialogue and Stoic practice — how Greeks and Romans thought about virtue, love, and the good life.",
+          "bookIds": ["symposium", "republic", "meditations", "after-virtue"]
+        },
+        {
+          "id": "ancient-historians",
+          "title": "Ancient Historians",
+          "collection": "Classics",
+          "description": "Primary accounts of war, empire, and the invention of history as a discipline.",
+          "bookIds": ["histories-herodotus", "peloponnesian-war", "agricola", "spqr"]
+        },
+        {
+          "id": "myth-reception",
+          "title": "Myth & Literary Reception",
+          "collection": "Classics",
+          "description": "Ovidian transformation and modern retellings — how classical myth travels across centuries.",
+          "bookIds": ["metamorphoses", "circe", "marriage-of-cadmus", "i-claudius"]
+        },
+        {
+          "id": "art-theory",
+          "title": "Art History & Visual Theory",
+          "collection": "Fine Arts",
+          "description": "Foundational criticism on seeing, reproduction, and photography — essential for History of Art coursework.",
+          "bookIds": ["ways-of-seeing", "story-of-art", "work-of-art-age", "on-photography"]
+        },
+        {
+          "id": "artists-lives",
+          "title": "Artists, Patrons & Lives",
+          "collection": "Fine Arts",
+          "description": "Biography, fiction, and Vasari's Renaissance lens on how artists are remembered.",
+          "bookIds": ["lives-of-artists", "agony-and-ecstasy", "girl-with-pearl-earring"]
+        },
+        {
+          "id": "archaeology-material",
+          "title": "Archaeology & Material Culture",
+          "collection": "Classics",
+          "description": "Sites, ruins, and rediscovery — from Pompeii to Mediterranean excavation.",
+          "bookIds": ["pompeii", "rubicon", "etruscans-uncovered"]
+        },
+        {
+          "id": "modern-classics",
+          "title": "Modern Encounters with Antiquity",
+          "collection": "Both",
+          "description": "20th-century novels and essays that argue with the classical past.",
+          "bookIds": ["ulysses", "zoo-story", "against-interpretation"]
+        }
+      ]
+    }
+  ]
+}
