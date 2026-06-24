@@ -76,8 +76,20 @@ Each book detail panel includes a **Read** section:
 |--------|-------------|
 | **Read in browser** | Free EPUB from Project Gutenberg (public-domain titles) |
 | **Kindle / Kobo / Apple / Google Play** | Store search links for eBook editions |
-| **Libby** | Borrow from your local library |
+| **Libby / public library** | Link your library by zip — one-click eBook & audiobook borrow at your branch |
 | **Open Library / Archive** | Free borrow or scanned copies |
+
+### Libby & public library borrow
+
+1. Open **E-reader settings** (📚) or **Find my library** on any book.
+2. Search by **zip code** or library name (uses OverDrive Library Finder).
+3. Select your library — borrow links target your catalog directly.
+
+Per-book **Public library borrow** panel includes:
+- Borrow eBook / audiobook at your linked library
+- Open in Libby app
+- Get a library card link (when available)
+- Fallback: Libby global search, OverDrive, Open Library, Internet Archive lending
 | **Open local EPUB** | Upload any `.epub` from your device |
 
 Reading position is saved in `localStorage` per book. Use arrow keys (← →) in the reader.
@@ -142,6 +154,7 @@ book-club-discussion/
 | `POST` | `/api/meetings` | Schedule a club meeting |
 | `POST` | `/api/clubs` | Create a book club |
 | `GET` | `/api/epub-proxy?url=` | Proxy EPUB from Gutenberg (CORS bypass) |
+| `POST` | `/api/library-search` | Search Libby-enabled libraries (OverDrive API) |
 
 ### Example: create a thread
 

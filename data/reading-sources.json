@@ -2,7 +2,10 @@
   "defaults": {
     "kindleSetupUrl": "https://www.amazon.com/sendtokindle/email",
     "koboUrl": "https://www.kobo.com/p/en/apps",
-    "libbyUrl": "https://www.overdrive.com/apps/libby/"
+    "libbyUrl": "https://www.overdrive.com/apps/libby/",
+    "libbySetupUrl": "https://www.overdrive.com/apps/libby/",
+    "overdriveSearchUrl": "https://www.overdrive.com/search",
+    "libraryFinderUrl": "https://www.overdrive.com/libraryfinder"
   },
   "books": {
     "iliad": { "gutenbergId": 6130 },

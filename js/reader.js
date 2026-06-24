@@ -1,3 +1,5 @@
+import { renderLibraryBorrowBlock, renderLibrarySearchResults } from './library.js';
+
 const PROGRESS_KEY = 'bcc-reading-progress';
 const DEVICES_KEY = 'bcc-reading-devices';
 
@@ -12,9 +14,11 @@ function loadDevices() {
       kindleEmail: '',
       koboEmail: '',
       preferredDevice: 'browser',
+      libraryZip: '',
+      library: null,
     };
   } catch {
-    return { kindleEmail: '', koboEmail: '', preferredDevice: 'browser' };
+    return { kindleEmail: '', koboEmail: '', preferredDevice: 'browser', libraryZip: '', library: null };
   }
 }
 
@@ -58,7 +62,6 @@ function buildReadingLinks(book, sources) {
     appleBooks: `https://books.apple.com/us/search?term=${q}`,
     googlePlay: `https://play.google.com/store/search?q=${q}&c=books`,
     openLibrary: `https://openlibrary.org/search?q=${q}`,
-    libby: `https://libbyapp.com/search/ncdl/search/query-${q}`,
     archive: `https://archive.org/search?query=${q}`,
   };
 }
@@ -71,6 +74,7 @@ function renderReadingSection(book, sources, container) {
   const hasEpub = Boolean(links.epubUrl);
 
   container.innerHTML = `
+    ${renderLibraryBorrowBlock(book, devices.library, sources)}
     <div class="reading-options">
       ${hasEpub ? `
         <button type="button" class="reading-btn primary" data-action="read-browser">
@@ -93,10 +97,6 @@ function renderReadingSection(book, sources, container) {
       <a class="reading-btn" href="${links.googlePlay}" target="_blank" rel="noopener">
         <span class="reading-btn-icon">▶</span>
         <span><strong>Google Play Books</strong><small>Android &amp; web</small></span>
-      </a>
-      <a class="reading-btn" href="${links.libby}" target="_blank" rel="noopener">
-        <span class="reading-btn-icon">🏛</span>
-        <span><strong>Borrow on Libby</strong><small>Library eBooks &amp; audiobooks</small></span>
       </a>
       <a class="reading-btn" href="${links.openLibrary}" target="_blank" rel="noopener">
         <span class="reading-btn-icon">🌐</span>
@@ -137,6 +137,35 @@ function renderReadingSection(book, sources, container) {
 
   container.querySelector('[data-action="device-settings"]')?.addEventListener('click', () => {
     openDeviceSettings(sources);
+  });
+
+  container.querySelector('[data-action="library-settings"]')?.addEventListener('click', () => {
+    openDeviceSettings(sources, 'library');
+  });
+}
+
+function renderLibraryCurrent(devices) {
+  const el = document.getElementById('library-current');
+  if (!el) return;
+  if (!devices.library?.name) {
+    el.innerHTML = '';
+    return;
+  }
+  el.innerHTML = `
+    <div class="library-current-card">
+      <strong>${escapeHtml(devices.library.name)}</strong>
+      <span>${escapeHtml(devices.library.city)}, ${escapeHtml(devices.library.region)}</span>
+      <button type="button" class="btn btn-ghost btn-sm" id="library-clear-btn">Remove</button>
+    </div>
+  `;
+  document.getElementById('library-clear-btn')?.addEventListener('click', () => {
+    const d = loadDevices();
+    d.library = null;
+    saveDevices(d);
+    renderLibraryCurrent(d);
+    if (readingRefresh) {
+      renderReadingSection(readingRefresh.book, readingRefresh.sources, readingRefresh.container);
+    }
   });
 }
 
@@ -282,7 +311,7 @@ function readerFontSize(delta) {
   epubRendition.themes.fontSize(`${Math.max(80, Math.min(160, current + delta))}%`);
 }
 
-function openDeviceSettings(sources) {
+function openDeviceSettings(sources, focusSection) {
   const modal = document.getElementById('device-modal');
   const devices = loadDevices();
   if (!modal) return;
@@ -290,6 +319,11 @@ function openDeviceSettings(sources) {
   document.getElementById('kindle-email').value = devices.kindleEmail || '';
   document.getElementById('kobo-email').value = devices.koboEmail || '';
   document.getElementById('preferred-device').value = devices.preferredDevice || 'browser';
+  document.getElementById('library-zip').value = devices.libraryZip || '';
+  document.getElementById('library-query').value = '';
+  document.getElementById('library-search-results').innerHTML = '';
+
+  renderLibraryCurrent(devices);
 
   const help = document.getElementById('device-help');
   if (help) {
@@ -300,19 +334,53 @@ function openDeviceSettings(sources) {
       <p><strong>Kobo:</strong> Download from
         <a href="${sources?.defaults?.koboUrl || 'https://www.kobo.com/p/en/apps'}" target="_blank" rel="noopener">Kobo apps</a>
         and sideload EPUBs via USB or cloud.</p>
-      <p><strong>Libby:</strong> Borrow library eBooks at
-        <a href="${sources?.defaults?.libbyUrl || 'https://www.overdrive.com/apps/libby/'}" target="_blank" rel="noopener">libbyapp.com</a>.</p>
+      <p><strong>Libby:</strong> Free eBooks and audiobooks from your public library. Download
+        <a href="${sources?.defaults?.libbySetupUrl || 'https://www.overdrive.com/apps/libby/'}" target="_blank" rel="noopener">Libby</a>,
+        add your library card, then borrow digitally. Use the search above to link your library here.</p>
     `;
   }
 
   modal.showModal();
+  if (focusSection === 'library') {
+    document.getElementById('library-zip')?.focus();
+  }
+}
+
+let pendingLibraries = [];
+
+async function handleLibrarySearch() {
+  const zip = document.getElementById('library-zip')?.value.trim();
+  const query = document.getElementById('library-query')?.value.trim();
+  const resultsEl = document.getElementById('library-search-results');
+  if (!resultsEl) return;
+
+  pendingLibraries = await renderLibrarySearchResults(resultsEl, zip, query);
+
+  resultsEl.querySelectorAll('.library-pick-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const lib = pendingLibraries.find((l) => String(l.systemId) === btn.dataset.systemId);
+      if (!lib) return;
+      const devices = loadDevices();
+      devices.library = lib;
+      devices.libraryZip = zip || devices.libraryZip;
+      saveDevices(devices);
+      renderLibraryCurrent(devices);
+      resultsEl.innerHTML = `<p class="library-search-status">Saved <strong>${escapeHtml(lib.name)}</strong>.</p>`;
+      if (readingRefresh) {
+        renderReadingSection(readingRefresh.book, readingRefresh.sources, readingRefresh.container);
+      }
+    });
+  });
 }
 
 function saveDeviceSettings() {
+  const current = loadDevices();
   saveDevices({
+    ...current,
     kindleEmail: document.getElementById('kindle-email').value.trim(),
     koboEmail: document.getElementById('kobo-email').value.trim(),
     preferredDevice: document.getElementById('preferred-device').value,
+    libraryZip: document.getElementById('library-zip').value.trim() || current.libraryZip,
   });
   document.getElementById('device-modal')?.close();
   if (readingRefresh) {
@@ -334,14 +402,9 @@ function bindReaderEvents() {
   document.getElementById('device-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
     saveDeviceSettings();
-    if (currentBookId) {
-      const detailReading = document.getElementById('detail-reading');
-      const book = window.__bccBooks?.find((b) => b.id === currentBookId);
-      if (detailReading && book && window.__bccReadingSources) {
-        renderReadingSection(book, window.__bccReadingSources, detailReading);
-      }
-    }
   });
+
+  document.getElementById('library-search-btn')?.addEventListener('click', handleLibrarySearch);
 
   document.addEventListener('keydown', (e) => {
     const overlay = document.getElementById('reader-overlay');

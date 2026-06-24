@@ -147,6 +147,49 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
+  if (urlPath === '/api/library-search' && req.method === 'POST') {
+    try {
+      const body = await parseBody(req);
+      const upstream = await fetch('https://libraryfinder.api.overdrive.com/v2/Branches/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      if (!upstream.ok) {
+        return sendJson(res, upstream.status, { error: 'Library finder request failed' });
+      }
+
+      const data = await upstream.json();
+      const seen = new Map();
+
+      for (const branch of data.branches || []) {
+        for (const system of branch.systems || []) {
+          if (!system.fulfillmentId || seen.has(system.id)) continue;
+          const digital = (system.links || []).find((l) => l.name === 'DigitalLibraryUrl');
+          const card = (system.links || []).find((l) => l.name === 'LibraryCardAquisitionUrl');
+          const main = (system.links || []).find((l) => l.name === 'MainLibraryUrl');
+          seen.set(system.id, {
+            systemId: system.id,
+            branchId: branch.id,
+            name: system.name,
+            branchName: branch.name,
+            city: branch.city,
+            region: branch.region,
+            fulfillmentId: system.fulfillmentId,
+            digitalHost: digital?.url || `${system.fulfillmentId}.overdrive.com`,
+            cardUrl: card?.url || main?.url || null,
+            instantCard: Boolean(system.isInstantAccessEnabled),
+          });
+        }
+      }
+
+      return sendJson(res, 200, { libraries: [...seen.values()] });
+    } catch {
+      return sendJson(res, 500, { error: 'Library search error' });
+    }
+  }
+
   if (urlPath === '/api/epub-proxy' && req.method === 'GET') {
     try {
       const target = new URL(req.url, 'http://localhost').searchParams.get('url');
